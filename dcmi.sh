@@ -1,20 +1,10 @@
 #!/bin/bash
 
-#    Fetch power consumption and inlet temperature, forward it to collectd
-#    Copyright (C) 2016  Janne Blomqvist
+# Fetch power consumption and inlet temperature, forward it to collectd
 #
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
+# Copyright (C) 2016-2021  Janne Blomqvist
 #
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#   You should have received a copy of the GNU General Public License
-#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# SPDX-License-Identifier: Apache-2.0
 
 HOSTNAME="${COLLECTD_HOSTNAME:-$(hostname -f)}"
 INTERVAL="${COLLECTD_INTERVAL:-60}"
